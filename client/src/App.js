@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Customer from './components/Customer'
 import Paper from '@material-ui/core/Paper';
@@ -12,8 +12,8 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = theme => ({
   root: {
     width: '100%',
-    marginTop: theme.spacing.unit * 3,
-    overflowX: 'auto'
+    marginTop: theme.spacing * 3,
+    overflowX: "auto"
   },
   table: {
     minWidth: 1080
@@ -46,8 +46,9 @@ const customers = [
   'job' : '대학생'
 }
 ]
-function App() {
-  const { classes } = this.props;
+class App extends Component {
+  render() {
+  const {classes}  = this.props;
     return (
         <Paper className={classes.root}>
             <Table className={classes.table}>
@@ -81,5 +82,6 @@ function App() {
         </Paper>
     );
   }
+}
 
 export default withStyles(styles)(App);
