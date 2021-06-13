@@ -74,6 +74,6 @@ class CustomerAdd extends React.Component {
             </form>
         )
     }
-}zfds
+}
 
 export default CustomerAdd;
