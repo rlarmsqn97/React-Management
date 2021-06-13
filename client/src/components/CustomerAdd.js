@@ -73,7 +73,7 @@ class CustomerAdd extends React.Component {
                 <button type="submit">추가하기</button>
             </form>
         )
-    }
+    }ojp
 }
 
 export default CustomerAdd;
